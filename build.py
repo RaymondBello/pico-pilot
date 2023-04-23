@@ -13,6 +13,9 @@ import glob
 # ========================================
 # In Linux use: alias pp='sudo putty -load PICO' 
 #               alias bp='python3 build_pico.py'
+# 
+# -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/arm-none-eabi-gcc 
+# -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/arm-none-eabi-g++
 
 # ========================================
 # ========= Point to PICO_SDK ============
