@@ -138,6 +138,7 @@ if pico_usb_name:
         print(pico_line)
         
         pico_log.write(f'{pico_line}\n')
+        pico_log.flush()
 else:
     print('Exiting...')
 

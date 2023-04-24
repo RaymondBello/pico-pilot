@@ -43,7 +43,7 @@ static THD_FUNCTION(ThreadTimer, arg) {
   (void)arg;
   chRegSetThreadName("timer");
   while (true) {
-    chThdSleepMilliseconds(500);
+    chThdSleepMilliseconds(1000);
     chSemSignal(&blinker_sem);
   }
 }

@@ -83,7 +83,7 @@ endif
 #
 
 # Define project name here
-PROJECT = ch
+PROJECT = chibi
 
 # Target settings.
 MCU  = cortex-m0plus

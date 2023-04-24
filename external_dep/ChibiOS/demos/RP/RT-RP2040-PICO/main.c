@@ -17,6 +17,7 @@
 #include "ch.h"
 #include "hal.h"
 
+
 semaphore_t blinker_sem;
 
 /*
@@ -29,7 +30,7 @@ static THD_FUNCTION(Thread1, arg) {
   chRegSetThreadName("blinker");
   while (true) {
     chSemWait(&blinker_sem);
-    palToggleLine(25U);
+    palToggleLine(21U);
   }
 }
 
@@ -56,7 +57,7 @@ int main(void) {
   /*
    * Setting up GPIOs.
    */
-  palSetLineMode(25U, PAL_MODE_OUTPUT_PUSHPULL | PAL_RP_PAD_DRIVE12);
+  palSetLineMode(21U, PAL_MODE_OUTPUT_PUSHPULL | PAL_RP_PAD_DRIVE12);
 
   /*
    * Creates the blinker thread.

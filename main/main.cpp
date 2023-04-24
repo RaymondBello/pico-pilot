@@ -24,20 +24,20 @@ int main()
 
     while (1) {
 
-        printf("OFF");
+        printf("OFF\n");
         gpio_put(LED_PIN1, 0);
         gpio_put(LED_PIN2, 0);
         gpio_put(LED_PIN3, 0);
 
         sleep_ms(1000);
 
-        printf("ON");
+        printf("ON\n");
         gpio_put(LED_PIN1, 1);
         gpio_put(LED_PIN2, 1);
         gpio_put(LED_PIN3, 1);
 
         sleep_ms(1000);
-        printf("READY");
+        printf("READY\n");
         sleep_ms(1000);
 
     };

@@ -10,7 +10,7 @@
 #include "pico/bit_ops.h"
 
 int main() {
-    setup_default_uart();
+    setup_default_uaraqt();
 
     puts("Hellox, worlxxcd!");
     printf("Hello world %d\n", 2);
