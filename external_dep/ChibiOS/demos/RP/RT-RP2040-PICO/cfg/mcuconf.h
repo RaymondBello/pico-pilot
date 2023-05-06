@@ -70,4 +70,11 @@
 #define RP_SPI_SPI1_DMA_PRIORITY            1
 #define RP_SPI_DMA_ERROR_HOOK(spip)
 
+/*
+ * USB driver system settings.
+ */
+#define RP_USB_USE_USB1                     TRUE
+#define RP_USB_USE_NAMED_ADDRESS_SPACES     TRUE
+
+
 #endif /* MCUCONF_H */

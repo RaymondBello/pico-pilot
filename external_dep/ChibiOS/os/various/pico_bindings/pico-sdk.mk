@@ -8,6 +8,12 @@ PICOSDKSRC     = $(PICOSDKROOT)/src/rp2_common/hardware_clocks/clocks.c \
 
 PICOSDKINC     = $(CHIBIOS)//os/various/pico_bindings/dumb/include \
                  $(PICOSDKROOT)/src/common/pico_base/include \
+                 $(PICOSDKROOT)/src/common/pico_stdlib/include \
+                 $(PICOSDKROOT)/src/common/pico_time/include \
+                 $(PICOSDKROOT)/src/rp2_common/pico_stdio/include \
+                 $(PICOSDKROOT)/src/rp2_common/pico_stdio_usb/include \
+                 $(PICOSDKROOT)/src/rp2_common/hardware_timer/include \
+                 $(PICOSDKROOT)/src/rp2_common/hardware_uart/include \
                  $(PICOSDKROOT)/src/rp2_common/pico_platform/include \
                  $(PICOSDKROOT)/src/rp2_common/hardware_base/include \
                  $(PICOSDKROOT)/src/rp2_common/hardware_clocks/include \
@@ -21,6 +27,12 @@ PICOSDKINC     = $(CHIBIOS)//os/various/pico_bindings/dumb/include \
                  $(PICOSDKROOT)/src/rp2040/hardware_structs/include \
                  $(PICOSDKROOT)/src/boards/include
 
+                
+
+
 # Shared variables
 ALLCSRC += $(PICOSDKSRC)
 ALLINC  += $(PICOSDKINC)
+
+# $(PICOSDKROOT)/src/rp2_common/pico_stdlib/include \
+# $(PICOSDKROOT)/src/rp2_common/pico_stdio_usb/include \
