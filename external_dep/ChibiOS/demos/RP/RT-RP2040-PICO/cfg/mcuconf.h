@@ -74,7 +74,7 @@
  * USB driver system settings.
  */
 #define RP_USB_USE_USB1                     TRUE
-#define RP_USB_USE_NAMED_ADDRESS_SPACES     TRUE
+#define RP_USB_USE_NAMED_ADDRESS_SPACES     FALSE
 
 
 #endif /* MCUCONF_H */
